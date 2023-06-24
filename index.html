@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SVG animation</title>
+
+<style>
+
+
+
+
+
+#container {
+             width:400px;
+             height:400px;
+             position:absolute;
+             top:0px;
+             left:300px;
+}
+
+
+
+
+#box {
+             width:400px;
+             height:400px;
+             position:absolute;
+             top:0px;
+             left:0px;
+}
+
+
+
+.front {
+  position:absolute;
+  top:150px;
+  left:50px;
+}
+
+
+
+.c1 {
+    fill:rgb(119, 0, 255,0.5);
+    filter:drop-shadow(0px 0px 3px rgb(55, 38, 66));
+    animation:round1 1s linear infinite;
+}
+
+@keyframes round1 {    
+    
+0% {fill:rgb(119, 0, 255,0.5);}
+23% {fill:rgba(0, 128, 255, 0.5);}
+33% {fill:rgba(98, 245, 91, 0.5);}
+43% {fill:rgba(225, 255, 0, 0.5);}
+53% {fill:rgba(255, 123, 0, 0.5);}
+63% {fill:rgba(255, 0, 0, 0.5);}
+73% {fill:rgba(190, 16, 118, 0.5);}
+83% {fill:rgba(255, 0, 247, 0.5);}
+}
+
+
+
+
+.c2 {
+    fill:rgba(255, 0, 247, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(55, 22, 52));
+    animation:round2 1s linear infinite;
+}
+
+@keyframes round2 {
+
+0% {fill:rgba(255, 0, 247, 0.5);}
+23% {fill:rgb(119, 0, 255,0.5);}
+33% {fill:rgba(0, 128, 255, 0.5);}
+43% {fill:rgba(98, 245, 91, 0.5);}
+53% {fill:rgba(225, 255, 0, 0.5);}
+63% {fill:rgba(255, 123, 0, 0.5);}
+73% {fill:rgba(255, 0, 0, 0.5);}
+83% {fill:rgba(190, 16, 118, 0.5);}
+}
+
+
+
+
+
+.c3 {
+    fill:rgba(190, 16, 118, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(172, 0, 202));
+    animation:round3 1s linear infinite;
+}
+
+@keyframes round3 {
+
+
+0% {fill:rgba(190, 16, 118, 0.5);}
+23% {fill:rgba(255, 0, 247, 0.5);}
+33% {fill:rgb(119, 0, 255,0.5);}
+43% {fill:rgba(0, 128, 255, 0.5);}
+53% {fill:rgba(98, 245, 91, 0.5);}
+63% {fill:rgba(225, 255, 0, 0.5);}
+73% {fill:rgba(255, 123, 0, 0.5);}
+83% {fill:rgba(255, 0, 0, 0.5);}
+}
+
+
+
+
+
+
+.c4 {
+    fill:rgba(255, 0, 0, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(66, 38, 38));
+    animation:round4 1s linear infinite;
+}
+
+@keyframes round4 {
+    
+
+0% {fill:rgba(255, 0, 0, 0.5);}
+23% {fill:rgba(190, 16, 118, 0.5);}
+33% {fill:rgba(255, 0, 247, 0.5);}
+43% {fill:rgb(119, 0, 255,0.5);}
+53% {fill:rgba(0, 128, 255, 0.5);}
+63% {fill:rgba(98, 245, 91, 0.5);}
+73% {fill:rgba(225, 255, 0, 0.5);}
+83% {fill:rgba(255, 123, 0, 0.5);}
+
+}
+
+
+
+
+
+.c5 {
+    fill:rgba(255, 123, 0, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(106, 71, 35));
+    animation:round5 1s linear infinite;
+}
+
+@keyframes round5 {
+    
+    
+
+0% {fill:rgba(255, 123, 0, 0.5);}
+23% {fill:rgba(255, 0, 0, 0.5);}
+33% {fill:rgba(190, 16, 118, 0.5);}
+43% {fill:rgba(255, 0, 247, 0.5);}
+53% {fill:rgb(119, 0, 255,0.5);}
+63% {fill:rgba(0, 128, 255, 0.5);}
+73% {fill:rgba(98, 245, 91, 0.5);}
+83% {fill:rgba(225, 255, 0, 0.5);}
+}
+
+
+
+
+
+
+.c6 {
+    fill:rgba(225, 255, 0, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(65, 66, 38));
+    animation:round6 1s linear infinite;
+}
+
+@keyframes round6 {
+    
+
+0% {fill:rgba(225, 255, 0, 0.5);} 
+23% {fill:rgba(255, 123, 0, 0.5);}
+33% {fill:rgba(255, 0, 0, 0.5);}
+43% {fill:rgba(190, 16, 118, 0.5);}
+53% {fill:rgba(255, 0, 247, 0.5);}
+63% {fill:rgb(119, 0, 255,0.5);}
+73% {fill:rgba(0, 128, 255, 0.5);}
+83% {fill:rgba(98, 245, 91, 0.5);}
+    
+}
+
+
+
+
+
+.c7 {
+    fill:rgba(98, 245, 91, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(38, 66, 41));
+    animation:round7 1s linear infinite;
+}
+
+@keyframes round7 {
+    
+
+0% {fill:rgba(98, 245, 91, 0.5);}  
+23% {fill:rgba(225, 255, 0, 0.5);} 
+33% {fill:rgba(255, 123, 0, 0.5);}
+43% {fill:rgba(255, 0, 0, 0.5);}
+53% {fill:rgba(190, 16, 118, 0.5);}
+63% {fill:rgba(255, 0, 247, 0.5);}
+73% {fill:rgb(119, 0, 255,0.5);}
+83% {fill:rgba(0, 128, 255, 0.5);}
+    
+}
+
+
+
+
+
+.c8 {
+    fill:rgba(0, 128, 255, 0.5);
+    filter:drop-shadow(0px 0px 3px rgb(38, 62, 66));
+    animation:round8 1s linear infinite;
+}
+
+@keyframes round8 {
+    
+
+0% {fill:rgba(0, 128, 255, 0.5);}
+23% {fill:rgba(98, 245, 91, 0.5);}  
+33% {fill:rgba(225, 255, 0, 0.5);} 
+43% {fill:rgba(255, 123, 0, 0.5);}
+53% {fill:rgba(255, 0, 0, 0.5);}
+63% {fill:rgba(190, 16, 118, 0.5);}
+73% {fill:rgba(255, 0, 247, 0.5);}
+83% {fill:rgb(119, 0, 255,0.5);}
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="box">
+
+
+<svg height="600" width="600" class="front">
+
+  
+  <circle class="c8" cx="300" cy="100" r="100" />
+
+  <circle class="c7" cx="400" cy="100" r="100" />
+
+  <circle class="c6" cx="450" cy="150" r="100" />
+
+  <circle class="c5" cx="450" cy="250" r="100" />
+
+  <circle class="c4" cx="400" cy="300" r="100" />
+
+  <circle class="c3" cx="300" cy="300" r="100" />
+
+  <circle class="c2" cx="250" cy="250" r="100" />
+
+  <circle class="c1" cx="250" cy="150" r="100" />
+
+
+<!-- linear arrangement
+
+  <circle class="c8" cx="450" cy="200" r="100" />
+
+  <circle class="c7" cx="400" cy="200" r="100" />
+
+  <circle class="c6" cx="350" cy="200" r="100" />
+
+  <circle class="c5" cx="300" cy="200" r="100" />
+
+  <circle class="c4" cx="250" cy="200" r="100" />
+
+  <circle class="c3" cx="200" cy="200" r="100" />
+
+  <circle class="c2" cx="150" cy="200" r="100" />
+
+  <circle class="c1" cx="100" cy="200" r="100" />
+
+-->
+</svg>
+
+</div>
+
+</div>
+</body>
+
+</html>
